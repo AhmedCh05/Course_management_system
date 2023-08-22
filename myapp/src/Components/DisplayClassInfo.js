@@ -4,7 +4,7 @@ import { Form, Row, Col } from "react-bootstrap";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 
-function DisplayCourseInfo({ obj }) {
+function DisplayClassInfo({ obj }) {
 	const [showModal, setShowModal] = useState(false);
 
 	const toggleModal = () => {
@@ -13,13 +13,14 @@ function DisplayCourseInfo({ obj }) {
 
 	const editData = (event) => {
 		event.preventDefault();
-		const newCourse = {
-			CourseID: event.target[0].value,
-			CourseName: event.target[1].value,
-			ProfessorID: event.target[2].value,
-			CourseDescription: event.target[3].value,
+		const newClass = {
+			ClassID: event.target[0].value,
+			ClassName: event.target[1].value,
+			RoomNo: event.target[2].value,
+			CourseID: event.target[3].value,
+			ProfessorID: event.target[4].value,
 		};
-		console.log(newCourse);
+		console.log(newClass);
 	};
 
 	return (
@@ -37,25 +38,53 @@ function DisplayCourseInfo({ obj }) {
 									<Col>
 										<Form.Group className="credentials">
 											<label className="Formlabel">
-												Course ID
+												Class ID
 											</label>
 											<Form.Control
-												placeholder="Course ID"
+												placeholder="Class ID"
 												type="text"
-												value={obj?.CourseID}
+												value={obj?.ClassID}
 												readOnly></Form.Control>
 										</Form.Group>
 									</Col>
 									<Col>
 										<Form.Group className="credentials">
 											<label className="Formlabel">
-												Course Name
+												Class Name
 											</label>
 											<Form.Control
-												placeholder="Course Name"
+												placeholder="Class Name"
 												type="text"
 												defaultValue={
-													obj?.CourseName
+													obj?.ClassName
+												}></Form.Control>
+										</Form.Group>
+									</Col>
+								</Row>
+								<Row className="SignleRowEntities">
+									<Col>
+										<Form.Group className="credentials">
+											<label className="Formlabel">
+												Room No
+											</label>
+											<Form.Control
+												placeholder="Room No"
+												type="text"
+												defaultValue={
+													obj?.RoomNo
+												}></Form.Control>
+										</Form.Group>
+									</Col>
+									<Col>
+										<Form.Group className="credentials">
+											<label className="Formlabel">
+												Course ID
+											</label>
+											<Form.Control
+												placeholder="Course ID"
+												type="text"
+												defaultValue={
+													obj?.CourseID
 												}></Form.Control>
 										</Form.Group>
 									</Col>
@@ -71,27 +100,6 @@ function DisplayCourseInfo({ obj }) {
 												type="text"
 												defaultValue={
 													obj?.ProfessorID
-												}></Form.Control>
-										</Form.Group>
-									</Col>
-									<Col>
-										<Form.Group className="credentials">
-											<label className="Formlabel">
-												Course Description
-											</label>
-											<Form.Control
-												as="textarea"
-												rows={4}
-												placeholder="Course Description"
-												type="text"
-												style={{
-													width: "100%",
-													boxSizing: "border-box",
-													resize: "none",
-													fontFamily: "inherit",
-												}}
-												defaultValue={
-													obj?.CourseDescription
 												}></Form.Control>
 										</Form.Group>
 									</Col>
@@ -111,10 +119,11 @@ function DisplayCourseInfo({ obj }) {
 			)}
 
 			<tr>
+				<td>{obj.ClassID}</td>
+				<td>{obj.ClassName}</td>
+				<td>{obj.RoomNo}</td>
 				<td>{obj.CourseID}</td>
-				<td>{obj.CourseName}</td>
 				<td>{obj.ProfessorID}</td>
-				<td>{obj.CourseDescription}</td>
 				<td>
 					<FontAwesomeIcon
 						id="viewIcon"
@@ -128,4 +137,4 @@ function DisplayCourseInfo({ obj }) {
 	);
 }
 
-export default DisplayCourseInfo;
+export default DisplayClassInfo;

@@ -1,0 +1,38 @@
+.CountNamecard {
+    width: 88%;
+    max-width: 200px; /* Increased card width */
+    padding: 0px;
+    border: none;
+    border-radius: 15px;
+    height: 108px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #252525; /* Darker color for card */
+    margin-top: 4px; /* Move the card down */
+    margin-left: 80px; /* Move the card to the right */
+  }
+  
+  .CountCard-header {
+    text-align: left;
+    color: #007bff;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .Countcard-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Style the card body */
+  .Countcard-body {
+    background-color: #252525; /* Darker color for card body */
+    padding-right: 35px;
+    padding-left: 2px;
+    font-size: medium;
+    border-radius: 0 0 15px 15px;
+    text-align: right;
+  }
+
+  #countSTD{
+    color: #007bff8c;
+    margin: 0;
+  }

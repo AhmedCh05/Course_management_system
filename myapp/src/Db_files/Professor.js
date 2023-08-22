@@ -12,12 +12,6 @@ const professor = [
 		Subject: "Information Technology",
 	},
 	{
-		ProfessorID: 3,
-		firstName: "Michael",
-		lastName: "Johnson",
-		Subject: "Data Science",
-	},
-	{
 		ProfessorID: 4,
 		firstName: "Emily",
 		lastName: "Williams",

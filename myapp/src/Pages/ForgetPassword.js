@@ -1,15 +1,17 @@
 import React from "react";
 import { Button, Card, Form, Container, Row, Col } from "react-bootstrap";
-import '../Assets/Css/forgetpass.css'
-import {AiOutlineArrowLeft} from 'react-icons/ai';
+import "../Assets/Css/forgetpass.css";
+import { AiOutlineArrowLeft } from "react-icons/ai";
 import credentials from "../Db_files/loginCredentials";
 
 function ForgetPassword() {
-	const resetPassword = (event) =>{
+	const resetPassword = (event) => {
 		event.preventDefault();
-		const foundEmail = credentials.find(item => item.email === event.target[0].value);
+		const foundEmail = credentials.find(
+			(item) => item.email === event.target[0].value
+		);
 		console.log(!!foundEmail);
-	}
+	};
 	return (
 		<>
 			<Container id="forgetPasscontainer">
@@ -24,14 +26,16 @@ function ForgetPassword() {
 									<Row>
 										<Col>
 											<Form.Group className="credentials">
-												<label className="Formlabel">Email</label>
+												<label className="Formlabel">
+													Email
+												</label>
 												<Form.Control
 													placeholder="Email"
 													type="email"></Form.Control>
 											</Form.Group>
 										</Col>
 									</Row>
-									<div id ="buttonPlacementForgetpass">
+									<div id="buttonPlacementForgetpass">
 										<Button
 											className="ForgetPassbtn-fill pull-right"
 											type="Submit"
@@ -40,9 +44,12 @@ function ForgetPassword() {
 										</Button>
 									</div>
 								</Form>
-                                <div id="links">
-								<a href="/login"><AiOutlineArrowLeft id="iconStyle"/>Back</a>
-                                </div>
+								<div id="links">
+									<a href="/login">
+										<AiOutlineArrowLeft id="iconStyle" />
+										Back
+									</a>
+								</div>
 							</Card.Body>
 						</Card>
 					</Col>

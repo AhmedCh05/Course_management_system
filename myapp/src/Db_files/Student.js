@@ -33,7 +33,7 @@ const students = [
 		lastName: "Davis",
 		Gender: "Female",
 		Age: 20,
-	},
+	}
 ];
 
 export default students;

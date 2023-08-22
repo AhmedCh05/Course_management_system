@@ -1,0 +1,37 @@
+.DashIconcard {
+    width: 88%;
+    max-width: 500px; /* Increased card width */
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+    height: 80px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #252525; /* Darker color for card */
+    margin-top: 8px; /* Move the card down */
+    margin-left: 80px; /* Move the card to the right */
+  }
+  
+  .DashIconCard-header {
+    text-align: left;
+    color: #007bff;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .DashIconcard-title {
+    font-size: 25px;
+    margin: 2px 0;
+  }
+  
+  /* Style the card body */
+  .DashIconcard-body {
+    background-color: #252525; /* Darker color for card body */
+    padding-right: 35px;
+    padding-left: 25px;
+    padding-bottom: 8px;
+    font-size: medium;
+    border-radius: 0 0 15px 15px;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+  }
+  

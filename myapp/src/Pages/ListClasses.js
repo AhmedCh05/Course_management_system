@@ -1,42 +1,41 @@
 import React from "react";
-import DisplayStudentInfo from "../Components/DisplayStudentInfo";
+import DisplayClassInfo from "../Components/DisplayClassInfo";
 import { Card, Table, Container, Row, Col } from "react-bootstrap";
-import students from "../Db_files/Student";
-import "../Assets/Css/studentrecords.css";
+import Classes from "../Db_files/Classes";
 
-function ListStudents() {
+function ListClasses() {
 	return (
-		<div className="list-students">
+		<div className="list-Classes">
 			<Container fluid>
 				<Row>
 					<Col>
-						<Card className="student-card">
+						<Card className="Classes-card">
 							<Card.Header className="card-header">
 								<div>
 									<Card.Title as="h4">
-										Student Records
+										Classes Records
 									</Card.Title>
 								</div>
 								<p className="subheading">
-									All Registered Students
+									All Registered Classes
 								</p>
 							</Card.Header>
 							<Card.Body>
 								<Table responsive>
 									<thead>
 										<tr>
-											<th>Student ID</th>
-											<th>First Name</th>
-											<th>Last Name</th>
-											<th>Gender</th>
-											<th>Age</th>
+											<th>Class ID</th>
+											<th>Class Name</th>
+											<th>Room No</th>
+											<th>Course ID</th>
+											<th>Professor ID</th>
 										</tr>
 									</thead>
 									<tbody>
-										{students?.map((student) => (
-											<DisplayStudentInfo
-												key={student.StudentID}
-												obj={student}
+										{Classes?.map((Class) => (
+											<DisplayClassInfo
+												key={Class.ClassID}
+												obj={Class}
 											/>
 										))}
 									</tbody>
@@ -50,4 +49,4 @@ function ListStudents() {
 	);
 }
 
-export default ListStudents;
+export default ListClasses;
