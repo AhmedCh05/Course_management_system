@@ -1,0 +1,11 @@
+/* Dashboard.css */
+.dashboard {
+    display: flex;
+    height:100vh;
+}
+  
+  .main-content {
+    flex-grow: 1;
+    background-color: #1e1e1e;
+}
+  

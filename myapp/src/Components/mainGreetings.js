@@ -1,0 +1,29 @@
+import React from "react";
+import { Card, Container, Row, Col} from "react-bootstrap";
+import '../Assets/Css/main-greetings.css';
+
+export default function mainGreetings (credentials){
+	const id = localStorage.getItem("id");
+	let foundEntry = null;
+	for (const key in credentials) {
+		// eslint-disable-next-line eqeqeq
+		if (credentials[key].id == id) {
+		  foundEntry = credentials[key];
+		  break;
+		}
+	  }
+	  
+    return(
+        <Container id="GreetingsNameContainer">
+				<Row>
+					<Col>
+						<Card className="Namecard">
+							<Card.Header className="GreetingName-header">
+								<Card.Title as="h1">Hello {foundEntry.firstName + " " + foundEntry.lastName}, </Card.Title>
+							</Card.Header>
+						</Card>
+					</Col>
+				</Row>
+			</Container>
+    );
+}

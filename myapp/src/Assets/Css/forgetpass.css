@@ -1,0 +1,109 @@
+/* Center the card on the page */
+#forgetPasscontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+    background-image: url('../Images/background.jpg');
+  }
+  
+  /* Style the card */
+  .card {
+    width: 120%;
+    max-width: 600px;
+    padding: 30px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #252525;
+    margin-left: -30px;
+  }
+  
+  .card-header {
+    text-align: center;
+    color: #007bff;
+    border-radius: 15px 15px 0 0;
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 28px;
+    margin: 15px 0;
+  }
+  
+  .credentials {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Formlabel {
+    color: grey;
+    padding: 12px 12px 12px 2px;
+  }
+  
+  .form-group {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .form-control {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  .form-group:last-child {
+    margin-bottom: 0;
+  }
+
+  #links{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #buttonPlacementForgetpass{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .ForgetPassbtn-fill {
+    margin-top: 20px;
+    width: 55%;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+  }
+  .btn-fill:active{
+    background-color: grey;
+  }
+  /* SignUp link */
+  a {
+    display: block;
+    text-align: center;
+    margin-top: 15%;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color:white;
+  }
+  #iconStyle{
+    padding-left: 5px;
+    font-weight: bold;
+  }
+  #iconStyle:hover{
+    color: white;
+  }

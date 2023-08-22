@@ -1,0 +1,104 @@
+/* Center the card on the page */
+#Logincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e; /* Dark background color for dark mode */
+    background-image: url('../Images/background.jpg');
+  }
+  
+  /* Style the card */
+  .Logincard {
+    width: 120%;
+    max-width: 600px; /* Increased card width */
+    padding: 30px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #252525; /* Darker color for card */
+    margin-left: -30px; /* Move the card to the left */
+  }
+  
+  .Logincard-header {
+    text-align: center;
+    color: #007bff;
+    border-radius: 15px 15px 0 0;
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 28px;
+    margin: 15px 0;
+  }
+  
+  .credentials {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Formlabel {
+    color: grey;
+    padding: 12px 12px 12px 2px;
+  }
+  
+  .form-group {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white; /* Text color for dark mode */
+  }
+  
+  .form-control {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #333; /* Darker border color */
+    border-radius: 5px;
+    background-color: #1e1e1e; /* Dark background color for input */
+    color: white; /* Text color for dark mode */
+  }
+  
+  .form-group:last-child {
+    margin-bottom: 0;
+  }
+
+  #links{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .btn-fill {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  }
+  .btn-fill:active{
+    background-color: grey;
+  }
+  
+  /* SignUp link */
+  a {
+    display: block;
+    text-align: center;
+    margin-top: 15%;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color:white;
+  }
+  #iconStyle{
+    padding-left: 5px;
+    font-weight: bold;
+  }
+  #iconStyle:hover{
+    color: white;
+  }
