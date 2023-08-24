@@ -33,6 +33,13 @@ const students = [
 		lastName: "Davis",
 		Gender: "Female",
 		Age: 20,
+	},
+	{
+		StudentID: 6,
+		firstName: "Ava",
+		lastName: "Will",
+		Gender: "Female",
+		Age: 24,
 	}
 ];
 

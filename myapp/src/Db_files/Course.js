@@ -6,6 +6,12 @@ const courses = [
 		CourseDescription: "Fundamentals of programming concepts.",
 	},
 	{
+		CourseID: 2,
+		CourseName: "Database Management",
+		ProfessorID: 2,
+		CourseDescription: "Design and management of databases.",
+	},
+	{
 		CourseID: 3,
 		CourseName: "Web Development",
 		ProfessorID: 3,
