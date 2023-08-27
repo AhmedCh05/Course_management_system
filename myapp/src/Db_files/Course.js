@@ -15,8 +15,7 @@ const courses = [
 		CourseID: 3,
 		CourseName: "Web Development",
 		ProfessorID: 3,
-		CourseDescription:
-			"Building dynamic websites using HTML, CSS, and JavaScript.",
+		CourseDescription: "Building dynamic websites using HTML, CSS, and JavaScript.",
 	},
 	{
 		CourseID: 4,

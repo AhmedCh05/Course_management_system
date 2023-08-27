@@ -30,7 +30,7 @@ function SignUp() {
 										<Col>
 											<Form.Group className="credentials">
 												<label className="Formlabel">First Name</label>
-												<Form.Control
+-												<Form.Control
 													placeholder="First name"
 													type="text"></Form.Control>
 											</Form.Group>
