@@ -1,7 +1,6 @@
-
 const ClassModel = require('../models/classModel');
 
-
+// Controller function for adding a class
 exports.addClass = async (req, res) => {
     try {
         const { ClassName, RoomNo, CourseID, ProfessorID } = req.body;
@@ -19,6 +18,7 @@ exports.addClass = async (req, res) => {
     }
 };
 
+// Controller function for getting all classes
 exports.getAllClasses = async (req, res) => {
     try {
         const result = await ClassModel.find().populate('ProfessorID').populate('CourseID');
