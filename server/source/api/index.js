@@ -7,7 +7,7 @@ const dbConfig = require('./config/dbConfig');
 const courseRoutes = require('./routes/courseRoutes');
 const classRoutes = require('./routes/classRoutes');
 const userRoutes = require('./routes/userRoutes');
-const studentRoutes = require('./routes/studentRoute');
+const studentRoutes = require('./routes/studentRoutes');
 const professorRoutes = require('./routes/professorRoutes');
 
 const app = express();
@@ -23,7 +23,7 @@ dbConfig.connect();
 app.use('/course', courseRoutes);
 app.use('/class', classRoutes);
 app.use('/user', userRoutes);
-app,use('/professor',professoRoutes);
+app.use('/professor',professorRoutes);
 app.use('/student',studentRoutes);
 
 app.listen(process.env.PORT, () => {
